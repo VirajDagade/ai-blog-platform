@@ -49,7 +49,8 @@ function CommentTableItem({ comment, fetchComments }) {
   return (
     <tr className="border-y border-gray-300">
       <td className="px-6 py-4">
-        <b className="font-medium text-gray-600">Blog</b>: {blog.title}
+        <b className="font-medium text-gray-600">Blog</b>:{" "}
+        {blog?.title || "N/A"}
         <br />
         <br />
         <b className="font-medium text-gray-600">Name</b>: {name}
